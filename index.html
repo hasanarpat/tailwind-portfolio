@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./dist/output.css" />
+    <title>Document</title>
+  </head>
+  <body class="font-nunito m-0 h-screen">
+    <div
+      class="relative h-1/2 lg:h-screen bg-gradient-to-t from-indigo-300 dark:from-slate-800 dark:to-slate-900 overflow-hidden"
+    >
+      <nav class="w-full fixed top-0 bg-white dark:bg-slate-900 z-10">
+        <div class="container mx-auto py-5 flex justify-between items-center">
+          <div class="flex items-center gap-2">
+            <img
+              class="w-15 h-10"
+              src="https://logos-world.net/wp-content/uploads/2020/10/Free-Emblem.png"
+              alt="logo"
+            />
+            <span class="text-2xl font-bold text-red-500">Wortund.</span>
+          </div>
+          <ul
+            class="hidden md:flex space-x-10 text-gray-600 dark:text-gray-200 font-bold text-sm uppercase"
+          >
+            <li>
+              <a class="hover:text-gray-500" href="#">homepage</a>
+            </li>
+            <li>
+              <a class="hover:text-gray-500" href="#about">about me</a>
+            </li>
+            <li>
+              <a class="hover:text-gray-500" href="#services">services</a>
+            </li>
+            <li>
+              <a class="hover:text-gray-500" href="#works">works</a>
+            </li>
+            <li>
+              <a class="hover:text-gray-500" href="#contact">contact</a>
+            </li>
+          </ul>
+          <img
+            class="w-8 h-8 hidden md:block cursor-pointer"
+            src="https://b.rgbimg.com/users/n/na/nazreth/600/mlx765m.jpg"
+            alt="alt"
+            id="moon"
+          />
+          <div id="hamburger" class="md:hidden z-20 space-y-1 cursor-pointer">
+            <div class="w-6 h-0.5 bg-white mr-4 hover:p-1"></div>
+            <div class="w-6 h-0.5 bg-white mr-4 hover:p-1"></div>
+            <div class="w-6 h-0.5 bg-white mr-4 hover:p-1"></div>
+          </div>
+          <ul
+            id="menu"
+            class="hidden z-10 bg-indigo-400 absolute top-0 left-0 w-full p-10 rounded-b-3xl space-y-10 text-white text-center"
+          >
+            <li>
+              <a
+                class="hover:text-gray-900 hover:bg-gray-300 hover:rounded-md hover:p-1 text-gray-300"
+                href="#"
+                >homepage</a
+              >
+            </li>
+            <li>
+              <a
+                class="hover:text-gray-900 hover:bg-gray-300 hover:rounded-md hover:p-1 text-gray-300"
+                href="#"
+                >about me</a
+              >
+            </li>
+            <li>
+              <a
+                class="hover:text-gray-900 hover:bg-gray-300 hover:rounded-md hover:p-1 text-gray-300"
+                href="#"
+                >services</a
+              >
+            </li>
+            <li>
+              <a
+                class="hover:text-gray-900 hover:bg-gray-300 hover:rounded-md hover:p-1 text-gray-300"
+                href="#"
+                >works</a
+              >
+            </li>
+            <li>
+              <a
+                class="hover:text-gray-900 hover:bg-gray-300 hover:rounded-md hover:p-1 text-gray-300"
+                href="#"
+                >contact</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <img
+        class="absolute bottom-0 -left-20 sm:left-0 mx-auto h-5/6 object-cover md:-left-40"
+        src="./man.png"
+        alt="man"
+      />
+      <div
+        class="hidden lg:block absolute -bottom-1/4 right-0 left-0 mx-auto rounded-full w-big h-big -z-10 bg bg-indigo-800 shadow-indigo-500 shadow-2xl"
+      ></div>
+      <div
+        class="absolute top-1/3 right-3 text-xl sm:right-10 sm:text-4xl md:right-6 md:top-24 md:text-6xl lg:right-20 xl:right-1/3 xl:top-1/4"
+      >
+        <span class="text-gray-600 lg:text-7xl font-bold">Freelance</span>
+        <p id="text" class="text-red-500 lg:text-5xl"></p>
+      </div>
+      <div
+        class="hidden lg:flex flex-col gap-5 rounded-md absolute top-20 -bottom-40 m-auto right-8 p-6 h-fit w-1/3 xl:right-80 xl:-top-10 bg-white dark:bg-slate-900 shadow-2xl dark:shadow-slate-700 -z-1"
+      >
+        <h1 class="font-bold text-indigo-500 text-3xl">Hi, I'm John</h1>
+        <p class="hover:text-gray-500 dark:text-white">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda
+          quas explicabo quae voluptate tenetur. At maxime nesciunt aperiam
+          repellendus asperiores accusantium magnam reprehenderit laborum
+          deserunt accusamus, quaerat nulla provident, iste facere in velit
+          eligendi nihil!
+        </p>
+        <a
+          href="#"
+          class="bg-indigo-300 w-1/3 text-center px-2 py-1 text-slate-800 font-extrabold rounded-md outline-none"
+          >Hire Me</a
+        >
+      </div>
+    </div>
+    <div id="about" class="dark:bg-slate-900">
+      <div class="container h-screen p-24 sm:pl-80 md:pl-24 lg:pl-80 w-full">
+        <div
+          class="flex lg:flex-row flex-col-reverse justify-around lg:pt-24 mx-auto md:items-center lg:items-start sm:gap-0 md:gap-5 lg:gap-20 lg:w-full"
+        >
+          <div
+            class="left relative w-full lg:w-1/2 md:w-full text-center mx-auto md:flex md:flex-col md:items-center"
+          >
+            <img src="./dots.png" alt="dots" class="h-56 w-56 object-cover" />
+            <img
+              src="./mann.jpg"
+              alt="man2"
+              class="absolute h-96 w-96 top-3 justify-around sm:left-10 md:left-24 lg:left-10 rounded-full mx-auto object-cover"
+            />
+          </div>
+          <div
+            class="right flex flex-col gap-3 w-full md:w-2/3 pb-6 text-center"
+          >
+            <h3 class="font-bold text-2xl dark:text-white text-indigo-700">
+              About Me
+            </h3>
+            <h3 class="font-bold text-xl dark:text-white text-purple-700">
+              Better Design
+            </h3>
+            <h3 class="font-bold text-xl dark:text-white text-purple-700">
+              Better Experience
+            </h3>
+            <p class="text-gray-400">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non odio
+              sit excepturi nam omnis. Lorem ipsum dolor sit amet.
+            </p>
+            <h3 class="dark:text-white">HTML</h3>
+            <div class="w-full bg-gray-400 h-1.5 rounded-md">
+              <div class="w-full bg-indigo-600 h-1.5 rounded-md"></div>
+            </div>
+            <h3 class="dark:text-white">Responsive Design</h3>
+            <div class="w-full bg-gray-400 h-1.5 rounded-md">
+              <div class="w-3/4 bg-indigo-600 h-1.5 rounded-md"></div>
+            </div>
+            <h3 class="dark:text-white">UI/UX</h3>
+            <div class="w-full bg-gray-400 h-1.5 rounded-md">
+              <div class="w-5/6 bg-indigo-600 h-1.5 rounded-md"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="services" class="dark:bg-slate-900 mt-56 sm:mt-0">
+      <div class="container mx-auto">
+        <div class="flex flex-col gap-3 items-center">
+          <h1 class="text-2xl font-bold text-indigo-600">SERVICES</h1>
+          <h1 class="text-3xl dark:text-white">What do I offer ?</h1>
+          <p class="px-5 md:w-2/3 md:text-center dark:text-white">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem
+            temporibus minus reprehenderit deserunt similique culpa, aperiam
+            libero veniam amet esse fuga est, totam voluptas ut?
+          </p>
+        </div>
+        <div class="flex flex-wrap p-1 w-full">
+          <div
+            class="w-full lg:w-1/3 shadow-2xl rounded-lg p-5 my-3 mb-3 gap-3 flex flex-col"
+          >
+            <img class="w-1/6 dark:bg-white" src="./dev.png" alt="dev" />
+            <h1 class="font-medium text-lg text-purple-600 dark:text-white">
+              UX / UI Design
+            </h1>
+            <p class="text-gray-400 dark:text-white">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad
+              assumenda aperiam vero. Dolorum, qui quaerat dicta maxime
+              voluptates cumque nemo? Deleniti nulla voluptatem obcaecati ex
+              voluptates facilis laboriosam perferendis dolore est dolores?
+            </p>
+            <a class="text-indigo-600 font-semibold text-sm" href="#"
+              >Read More...</a
+            >
+          </div>
+          <div
+            class="w-full lg:w-1/3 shadow-2xl rounded-lg p-5 my-3 mb-3 gap-3 flex flex-col"
+          >
+            <img class="w-1/6 dark:bg-white" src="./dev.png" alt="dev" />
+            <h1 class="font-medium text-lg text-purple-600 dark:text-white">
+              UX / UI Design
+            </h1>
+            <p class="text-gray-400 dark:text-white">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad
+              assumenda aperiam vero. Dolorum, qui quaerat dicta maxime
+              voluptates cumque nemo? Deleniti nulla voluptatem obcaecati ex
+              voluptates facilis laboriosam perferendis dolore est dolores?
+            </p>
+            <a class="text-indigo-600 font-semibold text-sm" href="#"
+              >Read More...</a
+            >
+          </div>
+          <div
+            class="w-full lg:w-1/3 shadow-2xl rounded-lg p-5 my-3 mb-3 gap-3 flex flex-col"
+          >
+            <img class="w-1/6 dark:bg-white" src="./dev.png" alt="dev" />
+            <h1 class="font-medium text-lg text-purple-600 dark:text-white">
+              UX / UI Design
+            </h1>
+            <p class="text-gray-400 dark:text-white">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad
+              assumenda aperiam vero. Dolorum, qui quaerat dicta maxime
+              voluptates cumque nemo? Deleniti nulla voluptatem obcaecati ex
+              voluptates facilis laboriosam perferendis dolore est dolores?
+            </p>
+            <a class="text-indigo-600 font-semibold text-sm" href="#"
+              >Read More...</a
+            >
+          </div>
+          <div
+            class="w-full lg:w-1/3 shadow-2xl rounded-lg p-5 my-3 mb-3 gap-3 flex flex-col"
+          >
+            <img class="w-1/6 dark:bg-white" src="./dev.png" alt="dev" />
+            <h1 class="font-medium text-lg text-purple-600 dark:text-white">
+              UX / UI Design
+            </h1>
+            <p class="text-gray-400 dark:text-white">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad
+              assumenda aperiam vero. Dolorum, qui quaerat dicta maxime
+              voluptates cumque nemo? Deleniti nulla voluptatem obcaecati ex
+              voluptates facilis laboriosam perferendis dolore est dolores?
+            </p>
+            <a class="text-indigo-600 font-semibold text-sm" href="#"
+              >Read More...</a
+            >
+          </div>
+          <div
+            class="w-full lg:w-1/3 shadow-2xl rounded-lg p-5 my-3 mb-3 gap-3 flex flex-col"
+          >
+            <img class="w-1/6 dark:bg-white" src="./dev.png" alt="dev" />
+            <h1 class="font-medium text-lg text-purple-600 dark:text-white">
+              UX / UI Design
+            </h1>
+            <p class="text-gray-400 dark:text-white">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad
+              assumenda aperiam vero. Dolorum, qui quaerat dicta maxime
+              voluptates cumque nemo? Deleniti nulla voluptatem obcaecati ex
+              voluptates facilis laboriosam perferendis dolore est dolores?
+            </p>
+            <a class="text-indigo-600 font-semibold text-sm" href="#"
+              >Read More...</a
+            >
+          </div>
+          <div
+            class="w-full lg:w-1/3 shadow-2xl rounded-lg p-5 my-3 mb-3 gap-3 flex flex-col"
+          >
+            <img class="w-1/6 dark:bg-white" src="./dev.png" alt="dev" />
+            <h1 class="font-medium text-lg text-purple-600 dark:text-white">
+              UX / UI Design
+            </h1>
+            <p class="text-gray-400 dark:text-white">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad
+              assumenda aperiam vero. Dolorum, qui quaerat dicta maxime
+              voluptates cumque nemo? Deleniti nulla voluptatem obcaecati ex
+              voluptates facilis laboriosam perferendis dolore est dolores?
+            </p>
+            <a class="text-indigo-600 font-semibold text-sm" href="#"
+              >Read More...</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="dark:bg-slate-900">
+      <div id="works" class="container mx-auto h-fit pt-24">
+        <div class="flex flex-col gap-3 items-center">
+          <h1 class="text-2xl font-bold text-indigo-600">WORKS</h1>
+          <h1 class="text-3xl dark:text-white">What have i done ?</h1>
+          <p class="px-16 py-5 md:w-3/5 text-center dark:text-white">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem
+            temporibus minus reprehenderit deserunt similique culpa, aperiam
+            libero veniam amet esse fuga est, totam voluptas ut?
+          </p>
+        </div>
+        <div class="flex flex-wrap mx-auto justify-center">
+          <div
+            class="w-full md:w-3/12 h-1/3 shadow-2xl rounded-lg p-2 mx-3 mb-3 gap-3 flex flex-col bg-slate-200"
+          >
+            <div class="h-8 bg-slate-600 w-full flex rounded-md py-0 my-0">
+              <div class="w-4 bg-red-500 h-4 rounded-full mt-2 mx-1"></div>
+              <div class="w-4 bg-yellow-500 h-4 rounded-full mt-2 mx-1"></div>
+              <div class="w-4 bg-green-500 h-4 rounded-full mt-2 mx-1"></div>
+            </div>
+            <img
+              class="w-full py-0 my-0"
+              src="https://picsum.photos/200"
+              alt="dev"
+            />
+
+            <a class="text-indigo-600 font-semibold text-sm" href="#"
+              >Read More...</a
+            >
+          </div>
+          <div
+            class="w-full md:w-3/12 h-1/3 shadow-2xl rounded-lg p-2 mx-3 mb-3 gap-3 flex flex-col bg-slate-200"
+          >
+            <div class="h-8 bg-slate-600 w-full flex rounded-md py-0 my-0">
+              <div class="w-4 bg-red-500 h-4 rounded-full mt-2 mx-1"></div>
+              <div class="w-4 bg-yellow-500 h-4 rounded-full mt-2 mx-1"></div>
+              <div class="w-4 bg-green-500 h-4 rounded-full mt-2 mx-1"></div>
+            </div>
+            <img
+              class="w-full py-0 my-0"
+              src="https://picsum.photos/200"
+              alt="dev"
+            />
+
+            <a class="text-indigo-600 font-semibold text-sm" href="#"
+              >Read More...</a
+            >
+          </div>
+          <div
+            class="w-full md:w-3/12 h-1/3 shadow-2xl rounded-lg p-2 mx-3 mb-3 gap-3 flex flex-col bg-slate-200"
+          >
+            <div class="h-8 bg-slate-600 w-full flex rounded-md py-0 my-0">
+              <div class="w-4 bg-red-500 h-4 rounded-full mt-2 mx-1"></div>
+              <div class="w-4 bg-yellow-500 h-4 rounded-full mt-2 mx-1"></div>
+              <div class="w-4 bg-green-500 h-4 rounded-full mt-2 mx-1"></div>
+            </div>
+            <img
+              class="w-full py-0 my-0"
+              src="https://picsum.photos/200"
+              alt="dev"
+            />
+
+            <a class="text-indigo-600 font-semibold text-sm" href="#"
+              >Read More...</a
+            >
+          </div>
+          <div
+            class="w-full md:w-3/12 h-1/3 shadow-2xl rounded-lg p-2 mx-3 mb-3 gap-3 flex flex-col bg-slate-200"
+          >
+            <div class="h-8 bg-slate-600 w-full flex rounded-md py-0 my-0">
+              <div class="w-4 bg-red-500 h-4 rounded-full mt-2 mx-1"></div>
+              <div class="w-4 bg-yellow-500 h-4 rounded-full mt-2 mx-1"></div>
+              <div class="w-4 bg-green-500 h-4 rounded-full mt-2 mx-1"></div>
+            </div>
+            <img
+              class="w-full py-0 my-0"
+              src="https://picsum.photos/200"
+              alt="dev"
+            />
+
+            <a class="text-indigo-600 font-semibold text-sm" href="#"
+              >Read More...</a
+            >
+          </div>
+          <div
+            class="w-full md:w-3/12 h-1/3 shadow-2xl rounded-lg p-2 mx-3 mb-3 gap-3 flex flex-col bg-slate-200"
+          >
+            <div class="h-8 bg-slate-600 w-full flex rounded-md py-0 my-0">
+              <div class="w-4 bg-red-500 h-4 rounded-full mt-2 mx-1"></div>
+              <div class="w-4 bg-yellow-500 h-4 rounded-full mt-2 mx-1"></div>
+              <div class="w-4 bg-green-500 h-4 rounded-full mt-2 mx-1"></div>
+            </div>
+            <img
+              class="w-full py-0 my-0"
+              src="https://picsum.photos/200"
+              alt="dev"
+            />
+
+            <a class="text-indigo-600 font-semibold text-sm" href="#"
+              >Read More...</a
+            >
+          </div>
+          <div
+            class="w-full md:w-3/12 h-1/3 shadow-2xl rounded-lg p-2 mx-3 mb-3 gap-3 flex flex-col bg-slate-200"
+          >
+            <div class="h-8 bg-slate-600 w-full flex rounded-md py-0 my-0">
+              <div class="w-4 bg-red-500 h-4 rounded-full mt-2 mx-1"></div>
+              <div class="w-4 bg-yellow-500 h-4 rounded-full mt-2 mx-1"></div>
+              <div class="w-4 bg-green-500 h-4 rounded-full mt-2 mx-1"></div>
+            </div>
+            <img
+              class="w-full py-0 my-0"
+              src="https://picsum.photos/200"
+              alt="dev"
+            />
+
+            <a class="text-indigo-600 font-semibold text-sm" href="#"
+              >Read More...</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Contact Section-->
+    <div id="contact" class="cotainer mx-auto h-screen dark:bg-slate-900">
+      <div class="flex w-full h-full mx-auto">
+        <div class="flex flex-col items-center justify-start w-full mt-20">
+          <h1 class="text-indigo-500 font-bold text-4xl p-5">Contact Me</h1>
+          <label for="title" class="text-indigo-400 my-2">Title</label>
+          <input
+            type="text"
+            name="title"
+            id="title"
+            class="w-3/5 m-2 h-12 rounded-md bg-slate-200 border-none outline-none px-5"
+          />
+          <label for="email" class="text-indigo-400 my-2">Email</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            class="w-3/5 m-2 h-12 rounded-md bg-slate-200 border-none outline-none px-5"
+          />
+          <label for="text" class="text-indigo-400 my-2">Message</label>
+          <textarea
+            type="text"
+            rows="12"
+            name="text"
+            id="text"
+            class="w-3/5 m-2 rounded-md bg-slate-200 border-none outline-none px-5"
+          ></textarea>
+          <button
+            class="bg-indigo-300 p-4 py-2 rounded-md text-white hover:bg-white hover:text-indigo-300 hover:border-2 hover:border-indigo-200"
+          >
+            Send Message
+          </button>
+        </div>
+      </div>
+    </div>
+    <!--Footer-->
+    <div class="h-20 bg-slate-700 p-0">
+      <nav class="w-full z-10">
+        <div class="container mx-auto py-5 flex justify-between items-center">
+          <div class="flex items-center gap-2">
+            <img
+              class="w-15 h-10"
+              src="https://logos-world.net/wp-content/uploads/2020/10/Free-Emblem.png"
+              alt="logo"
+            />
+            <span class="text-2xl font-bold text-red-500">Wortund.</span>
+          </div>
+          <ul
+            class="hidden md:flex space-x-10 text-gray-600 font-bold text-sm uppercase"
+          >
+            <li>
+              <a
+                class="hover:text-gray-900 hover:bg-gray-300 hover:rounded-md hover:p-1 text-gray-300"
+                href="#"
+                >homepage</a
+              >
+            </li>
+            <li>
+              <a
+                class="hover:text-gray-900 hover:bg-gray-300 hover:rounded-md hover:p-1 text-gray-300"
+                href="#"
+                >about me</a
+              >
+            </li>
+            <li>
+              <a
+                class="hover:text-gray-900 hover:bg-gray-300 hover:rounded-md hover:p-1 text-gray-300"
+                href="#"
+                >services</a
+              >
+            </li>
+            <li>
+              <a
+                class="hover:text-gray-900 hover:bg-gray-300 hover:rounded-md hover:p-1 text-gray-300"
+                href="#"
+                >works</a
+              >
+            </li>
+            <li>
+              <a
+                class="hover:text-gray-900 hover:bg-gray-300 hover:rounded-md hover:p-1 text-gray-300"
+                href="#"
+                >contact</a
+              >
+            </li>
+          </ul>
+
+          <div
+            id="hamburger"
+            class="z-20 space-y-1 cursor-pointer rounded-full hover:bg-gray-300 h-8 flex flex-col items-center justify-center mr-4"
+          >
+            <div class="w-6 h-0.5 bg-white hover:m-1"></div>
+            <div class="w-6 h-0.5 bg-white hover:m-1"></div>
+            <div class="w-6 h-0.5 bg-white hover:m-1"></div>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <script src="./app.js"></script>
+    <script src="./autotyping.js"></script>
+  </body>
+</html>
